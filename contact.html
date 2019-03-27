@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BORZ</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<header>
+		<div class="nav"></div>
+		<div class="nav2"></div>
+		<div class="container">
+			<div class="width2">
+				<h2>Контакты<span></span></h2>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container width2">
+			<div class="razdely width2">
+				<a href="index.html">Главная</a>
+				<a href="">Контакты <span></span></a>
+			</div>
+			<div class="contact">
+				<div class="left">
+					<h3>Наши контакты <span></span></h3>
+					<h4>Телефоны для обратной связи:</h4>
+					<p class="num"><img src="img/footer/phone.png" alt="">8 (068) 229-09-52</p>
+					<p class="num"><img src="img/footer/phone.png" alt="">8 (066) 310-52-54</p>
+					<p class="num" style="margin-bottom: 80px;"><img src="img/footer/phone.png" alt="">8 (093) 957-87-98</p>
+					<div class="dashed"></div>
+					<p class="button form-trigger">Заказать бесплатный обратный звонок</p>
+					<p class="adres"><img src="img/contact/map-marker.png" alt="">Российская Федерация, Москва, <br />
+					  Чистопрудный бульвар, 23с1</p>
+					 <p class="email"><img src="img/contact/email.png" alt="">shop@borzblack.net</p>
+				</div>
+				<div class="right">
+					<div id="map"></div>
+					<p class="contc" data-parallax='{"y": -40}'>Контакты</p>
+				</div>
+			</div>
+			<div class="social">
+				<img class="man" src="img/contact/1.png" alt="">
+				<div class="right">
+					<p>
+						Если у тебя остались <br />
+						вопросы, напиши <br />
+						нам в соц.сетях
+						<span></span>
+					</p>
+					<div class="ico">
+						<a href="#"><img src="img/contact/vk.png" alt="" /><img src="img/footer/inst_color.png" alt="" /></a>
+						<a href="#"><img src="img/contact/inst.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+	<div class="popup-forma2"></div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<script src="js/slick.min.js" type="text/javascript"></script>
+	<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+	<script src="js/wow.js" type="text/javascript"></script>
+	<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdXRbyeV0met71bXTHrfGP9TebJxhdBDo&callback=initMap" async defer>
+    </script>
+    <script type="text/javascript">
+    	function initMap() {
+	      var uluru = {lat: 55.760446, lng: 37.646624};
+	      var map = new google.maps.Map(document.getElementById('map'), {
+	        zoom: 14,
+	        center: uluru
+	      });
+	      var styledMapType=new google.maps.StyledMapType(
+				[
+					{
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"elementType":"labels.icon",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"elementType":"labels.text.stroke",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"administrative.land_parcel",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"poi",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"poi",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"poi.park",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"poi.park",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"road",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"road.arterial",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"road.highway",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"road.highway",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"road.local",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"transit.line",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"transit.station",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"water",
+						"elementType":"geometry",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					},
+					{
+						"featureType":"water",
+						"elementType":"labels.text.fill",
+						"stylers":[
+							{
+								"saturation": -100
+							}
+						]
+					}
+				],
+				{name:'Styled Map'}
+			);
+	      map.mapTypes.set('styled_map',styledMapType);
+		map.setMapTypeId('styled_map');
+	      var marker = new google.maps.Marker({
+	        position: uluru,
+	        map: map,
+	        icon: "img/contact/map-marker2.png",
+	        title: "Российская Федерация, Москва, Соломянская 3, офис 25103500"
+	      });
+	    }
+    </script>
+    <script src="js/jquery.parallax-scroll.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/libs.min.js" type="text/javascript"></script>
+</body>
+</html>
